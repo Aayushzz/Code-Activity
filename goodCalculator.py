@@ -1,3 +1,10 @@
+'''Calculator Program that asks user for two numbers and can decide to add, sub, mult, or div
+Three Principles Used:
+KISS
+DRY Code
+Single Responsibility 
+'''
+
 def get_number(prompt):
   while True:
     try:
@@ -30,10 +37,6 @@ def main():
   while True:
     choice = menu_interface()
 
-    if choice == "5":
-      print("Calculator Off")
-      break
-
     if choice not in ("1", "2", "3", "4"):
       print("Invalid choice. Try Again.")
       continue
@@ -57,5 +60,6 @@ def main():
 
 if __name__ == "__main__":
   main()
+
 
 
