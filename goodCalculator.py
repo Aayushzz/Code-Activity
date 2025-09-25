@@ -1,4 +1,5 @@
-'''Calculator Program that asks user for two numbers and can decide to add, sub, mult, or div
+'''
+Calculator Program that asks user for two numbers and can decide to add, sub, mult, or div
 Three Principles Used:
 KISS
 DRY Code
@@ -61,6 +62,7 @@ def main():
 
 if __name__ == "__main__":
   main()
+
 
 
 
