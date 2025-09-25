@@ -5,13 +5,14 @@ DRY Code
 Single Responsibility 
 '''
 
+
 def get_number(prompt):
   while True:
     try:
       return float(input(prompt))
     except ValueError:
       print("Invalid number. Please try again")
-
+#Each function does its own thing
 def add(a, b):
   return a + b
 
@@ -32,7 +33,7 @@ def menu_interface():
   print("4. Divide")
   print("5. Quit")
   return input("Choose an option (1-5): ")
-
+#Relatively Simple and nothing is repeated unnecesarily
 def main():
   while True:
     choice = menu_interface()
@@ -60,6 +61,7 @@ def main():
 
 if __name__ == "__main__":
   main()
+
 
 
 
